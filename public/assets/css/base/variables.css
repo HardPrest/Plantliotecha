@@ -1,0 +1,41 @@
+:root{
+
+    /* Colors */
+
+    --background:#1E1F22;
+    --sidebar:#2B2D31;
+    --card:#313338;
+    --card-hover:#3b3d44;
+    --border:#3F4147;
+
+    --primary:#57F287;
+    --secondary:#5865F2;
+    --warning:#FEE75C;
+    --danger:#ED4245;
+
+    --text:#FFFFFF;
+    --text-light:#B5BAC1;
+
+    /* Radius */
+
+    --radius-small:8px;
+    --radius:12px;
+    --radius-large:20px;
+
+    /* Shadows */
+
+    --shadow:
+        0 5px 20px rgba(0,0,0,.35);
+
+    /* Sidebar */
+
+    --sidebar-width:260px;
+
+    /* Header */
+
+    --header-height:70px;
+
+    /* Animation */
+
+    --speed:.25s;
+}
