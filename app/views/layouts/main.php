@@ -8,16 +8,7 @@
 
     <title>Plantliotecha</title>
 
-    <link rel="stylesheet" href="/Plantliotecha/public/assets/css/base/variables.css">
-    <link rel="stylesheet" href="/Plantliotecha/public/assets/css/base/reset.css">
-
-    <link rel="stylesheet" href="/Plantliotecha/public/assets/css/layout/sidebar.css">
-    <link rel="stylesheet" href="/Plantliotecha/public/assets/css/layout/topbar.css">
-
-    <link rel="stylesheet" href="/Plantliotecha/public/assets/css/components/cards.css">
-    <link rel="stylesheet" href="/Plantliotecha/public/assets/css/components/buttons.css">
-
-    <link rel="stylesheet" href="/Plantliotecha/public/assets/css/pages/dashboard.css">
+    <link rel="stylesheet" href="/Plantliotecha/public/assets/css/app.css">
 
 </head>
 

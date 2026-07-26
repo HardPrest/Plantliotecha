@@ -46,6 +46,26 @@ Welcome to Plantliotecha
 
 </div>
 
+<div class="stat-card">
+
+    <div class="stat-icon">
+
+        🌿
+
+    </div>
+
+    <div class="stat-info">
+
+        <span>Total Plants</span>
+
+        <h1>24</h1>
+
+        <small>+3 this week</small>
+
+    </div>
+
+</div>
+
 <?php
 
 $content = ob_get_clean();

@@ -1,0 +1,55 @@
+.card{
+
+    background:#313338;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:18px;
+
+    padding:24px;
+
+    transition:.25s;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#57F287;
+
+    box-shadow:
+        0 25px 45px rgba(0,0,0,.35);
+
+}
+
+.stat-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:24px;
+
+    background:var(--gray-700);
+
+    border-radius:18px;
+
+    transition:.25s;
+
+    cursor:pointer;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-5px);
+
+    border:1px solid var(--green-500);
+
+}

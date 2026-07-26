@@ -15,6 +15,22 @@
 
     --text:#FFFFFF;
     --text-light:#B5BAC1;
+    
+    --gray-900:#1E1F22;
+    --gray-850:#232428;
+    --gray-800:#2B2D31;
+    --gray-700:#313338;
+    --gray-600:#3F4147;
+    --gray-500:#5B5D66;
+
+
+    --green-100:#E6F9ED;
+    --green-200:#C8F2D5;
+    --green-300:#A5EABC;
+    --green-400:#7BDF9D;
+    --green-500:#57F287;
+    --green-600:#3FD16C;
+    --green-700:#2DAA55;
 
     /* Radius */
 
@@ -38,4 +54,21 @@
     /* Animation */
 
     --speed:.25s;
+
+    /* Spacing */
+
+    --space-1:4px;
+    --space-2:8px;
+    --space-3:16px;
+    --space-4:24px;
+    --space-5:32px;
+    --space-6:48px;
+    --space-7:64px;
+
+    /* Border Radius */
+
+    --radius-sm:8px;
+    --radius-md:14px;
+    --radius-lg:20px;
+    --radius-xl:28px;
 }
