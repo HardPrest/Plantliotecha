@@ -1,73 +1,49 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
 
-ob_start();
+<head>
 
-?>
+    <meta charset="UTF-8">
 
-<h1>
+    <title>Plantliotecha</title>
 
-Welcome to Plantliotecha
+    <link rel="stylesheet" href="assets/css/app.css">
 
-</h1>
+</head>
 
-<div class="dashboard-grid">
+<body>
 
-    <div class="card">
+<div class="hero">
 
-        <h2>Total Plants</h2>
+    <h1>🌿 Plantliotecha</h1>
 
-        <h1>0</h1>
+    <h2>Grow • Learn • Thrive</h2>
 
-    </div>
+    <p>
 
-    <div class="card">
+        Organize your plant collection, never miss care tasks,
+        and share your growing journey with friends.
 
-        <h2>Tasks Due</h2>
+    </p>
 
-        <h1>0</h1>
+    <div class="hero-buttons">
 
-    </div>
+        <a class="button" href="register.php">
 
-    <div class="card">
+            Get Started
 
-        <h2>Badges</h2>
+        </a>
 
-        <h1>0</h1>
+        <a class="button secondary" href="login.php">
 
-    </div>
+            Login
 
-</div>
-
-<div class="card">
-
-    <h2>Recent Activity</h2>
-
-    <p>No activity yet.</p>
-
-</div>
-
-<div class="stat-card">
-
-    <div class="stat-icon">
-
-        🌿
-
-    </div>
-
-    <div class="stat-info">
-
-        <span>Total Plants</span>
-
-        <h1>24</h1>
-
-        <small>+3 this week</small>
+        </a>
 
     </div>
 
 </div>
 
-<?php
+</body>
 
-$content = ob_get_clean();
-
-include "../app/Views/layouts/main.php";
+</html>
