@@ -1,13 +1,16 @@
 <?php
 
-require_once 'config.php';
+$host = "localhost";
+$dbname = "plantliotecha";
+$username = "root";
+$password = "";
 
 try {
 
     $pdo = new PDO(
-        "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=utf8mb4",
-        DB_USER,
-        DB_PASS
+        "mysql:host=$host;dbname=$dbname;charset=utf8mb4",
+        $username,
+        $password
     );
 
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

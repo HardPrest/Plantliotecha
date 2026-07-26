@@ -8,26 +8,17 @@
 
     <title>Plantliotecha</title>
 
-    <link rel="stylesheet" href="/Plantliotecha/public/assets/css/base/variables.css">
-    <link rel="stylesheet" href="/Plantliotecha/public/assets/css/base/reset.css">
-
-    <link rel="stylesheet" href="/Plantliotecha/public/assets/css/layout/sidebar.css">
-    <link rel="stylesheet" href="/Plantliotecha/public/assets/css/layout/topbar.css">
-
-    <link rel="stylesheet" href="/Plantliotecha/public/assets/css/components/cards.css">
-    <link rel="stylesheet" href="/Plantliotecha/public/assets/css/components/buttons.css">
-
-    <link rel="stylesheet" href="/Plantliotecha/public/assets/css/pages/dashboard.css">
+    <link rel="stylesheet" href="public/assets/css/app.css">
 
 </head>
 
 <body>
 
-<?php include "../app/Views/partials/sidebar.php"; ?>
+<?php include "../app/views/partials/sidebar.php"; ?>
 
 <div class="main">
 
-    <?php include "../app/Views/partials/topbar.php"; ?>
+    <?php include "../app/views/partials/topbar.php"; ?>
 
     <main class="content">
 

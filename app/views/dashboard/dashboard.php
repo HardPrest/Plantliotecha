@@ -3,82 +3,44 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<title>Dashboard</title>
+    <title>Plantliotecha</title>
 
-<link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/app.css">
 
 </head>
 
 <body>
 
-<div class="wrapper">
+<div class="hero">
 
-    <aside class="sidebar">
+    <h1>🌿 Plantliotecha</h1>
 
-        <h2>🌿 Plantliotecha</h2>
+    <h2>Grow • Learn • Thrive</h2>
 
-        <nav>
+    <p>
 
-            <a href="#">Dashboard</a>
+        Organize your plant collection, never miss care tasks,
+        and share your growing journey with friends.
 
-            <a href="#">My Plants</a>
+    </p>
 
-            <a href="#">Calendar</a>
+    <div class="hero-buttons">
 
-            <a href="#">Friends</a>
+        <a class="button" href="register.php">
 
-            <a href="#">Community</a>
+            Get Started
 
-            <a href="#">Badges</a>
+        </a>
 
-            <a href="logout.php">Logout</a>
+        <a class="button secondary" href="login.php">
 
-        </nav>
+            Login
 
-    </aside>
+        </a>
 
-    <main class="content">
-
-        <h1>
-
-            Welcome,
-            <?= htmlspecialchars($username) ?>
-
-        </h1>
-
-        <br>
-
-        <div class="dashboard-grid">
-
-            <div class="card">
-
-                <h2>Total Plants</h2>
-
-                <h1>0</h1>
-
-            </div>
-
-            <div class="card">
-
-                <h2>Tasks Due</h2>
-
-                <h1>0</h1>
-
-            </div>
-
-            <div class="card">
-
-                <h2>Badges</h2>
-
-                <h1>0</h1>
-
-            </div>
-
-        </div>
-
-    </main>
+    </div>
 
 </div>
 

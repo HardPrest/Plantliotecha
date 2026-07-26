@@ -1,7 +1,7 @@
 <?php
 
-<<<<<<< Updated upstream
-include "../app/Views/dashboard/index.php";
-=======
-require_once "../app/views/dashboard/index.php";
->>>>>>> Stashed changes
+require_once "../app/Controllers/HomeController.php";
+
+$controller = new HomeController();
+
+$controller->index();
