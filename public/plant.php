@@ -53,6 +53,14 @@ if (!$plant) {
 
 <div class="container">
 
+<p>
+    <a href="dashboard.php">Dashboard</a>
+    &middot;
+    <a href="plants.php">My Plants</a>
+    &middot;
+    <a href="profile.php">Profile &amp; settings</a>
+</p>
+
 <h1>
 
 <?= htmlspecialchars($plant["nickname"] ?: $plant["species"]) ?>
