@@ -8,6 +8,7 @@ if (!isset($_SESSION["user_id"])) {
 }
 
 require_once "../config/database.php";
+$theme = $_SESSION["theme"] ?? "light";
 
 $id = $_GET["id"] ?? 0;
 
@@ -84,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 }
 ?>
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Edit Plant | Plantliotecha</title><link rel="stylesheet" href="assets/css/app.css"></head><body><main class="container">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Edit Plant | Plantliotecha</title><link rel="stylesheet" href="assets/css/app.css"><link rel="stylesheet" href="assets/css/theme.css"></head><body data-theme="<?= htmlspecialchars($theme) ?>"><main class="container">
 <p><a href="plant.php?id=<?= (int) $id ?>">&larr; Back to plant</a></p>
 <h1>Edit <?= htmlspecialchars($plant["nickname"] ?: $plant["species"]) ?></h1>
 <?php if (!empty($errors)): ?><div class="alert danger"><?= htmlspecialchars($errors[0]) ?></div><?php endif; ?>

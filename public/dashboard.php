@@ -10,6 +10,7 @@ if (!isset($_SESSION["user_id"])) {
 }
 
 $username = $_SESSION["username"];
+$theme = $_SESSION["theme"] ?? "light";
 
 require_once "../config/database.php";
 $count = $pdo->prepare("SELECT COUNT(*) FROM plants WHERE user_id = ?");
@@ -26,11 +27,12 @@ $plantCount = (int) $count->fetchColumn();
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dashboard | Plantliotecha</title>
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
 </head>
 
-<body>
+<body data-theme="<?= htmlspecialchars($theme) ?>">
     <main class="container">
-        <p><a href="plants.php">My plants</a> &middot; <a href="logout.php">Log out</a></p>
+        <p><a href="plants.php">My plants</a> &middot; <a href="profile.php">Profile & settings</a> &middot; <a href="logout.php">Log out</a></p>
         <h1>Welcome back, <?= htmlspecialchars($username) ?>.</h1>
         <p style="color:var(--muted);max-width:560px">Your personal plant library is ready whenever you are.</p>
         <p><a class="button" href="add-plant.php">Add a plant</a> <a class="button secondary" href="plants.php">View collection</a></p>

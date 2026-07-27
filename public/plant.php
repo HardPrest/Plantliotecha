@@ -8,6 +8,7 @@ if (!isset($_SESSION["user_id"])) {
 }
 
 require_once "../config/database.php";
+$theme = $_SESSION["theme"] ?? "light";
 
 if (!isset($_GET["id"]) || !is_numeric($_GET["id"])) {
     die("Invalid plant.");
@@ -44,10 +45,11 @@ if (!$plant) {
 <title><?= htmlspecialchars($plant["nickname"] ?: $plant["species"]) ?></title>
 
 <link rel="stylesheet" href="assets/css/app.css">
+<link rel="stylesheet" href="assets/css/theme.css">
 
 </head>
 
-<body>
+<body data-theme="<?= htmlspecialchars($theme) ?>">
 
 <div class="container">
 

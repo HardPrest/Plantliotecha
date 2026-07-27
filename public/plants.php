@@ -21,6 +21,7 @@ $stmt = $pdo->prepare("
 $stmt->execute([$_SESSION["user_id"]]);
 
 $plants = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$theme = $_SESSION["theme"] ?? "light";
 
 ?>
 
@@ -34,14 +35,15 @@ $plants = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <title>My Plants | Plantliotecha</title>
 
 <link rel="stylesheet" href="assets/css/app.css">
+<link rel="stylesheet" href="assets/css/theme.css">
 
 </head>
 
-<body>
+<body data-theme="<?= htmlspecialchars($theme) ?>">
 
 <div class="container">
 
-<p><a href="dashboard.php">Dashboard</a> &middot; <a href="logout.php">Log out</a></p>
+<p><a href="dashboard.php">Dashboard</a> &middot; <a href="profile.php">Profile & settings</a> &middot; <a href="logout.php">Log out</a></p>
 
 <h1>My Plants</h1>
 

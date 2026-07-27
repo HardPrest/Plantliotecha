@@ -8,6 +8,7 @@ if (!isset($_SESSION["user_id"])) {
 }
 
 require_once "../config/database.php";
+$theme = $_SESSION["theme"] ?? "light";
 
 $errors = [];
 
@@ -78,10 +79,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <title>Add Plant</title>
 
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
 
 </head>
 
-<body>
+<body data-theme="<?= htmlspecialchars($theme) ?>">
 
 <div class="container">
 

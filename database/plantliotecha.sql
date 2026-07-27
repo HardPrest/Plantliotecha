@@ -92,6 +92,7 @@ CREATE TABLE `users` (
   `profile_picture` varchar(255) DEFAULT 'default-avatar.png',
   `bio` text DEFAULT NULL,
   `is_public` tinyint(1) DEFAULT 0,
+  `theme` enum('light','dark') NOT NULL DEFAULT 'light',
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
