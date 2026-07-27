@@ -180,6 +180,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         </button>
 
+        <a class="button" href="plants.php">
+            Cancel
+        </a>
+
     </form>
 
 </div>

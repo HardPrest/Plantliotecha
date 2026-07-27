@@ -41,6 +41,8 @@ $plants = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <div class="container">
 
+<p><a href="dashboard.php">Dashboard</a> &middot; <a href="logout.php">Log out</a></p>
+
 <h1>My Plants</h1>
 
 <p>

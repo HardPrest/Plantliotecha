@@ -2,15 +2,15 @@
 
 $host = "localhost";
 $dbname = "plantliotecha";
-$username = "root";
-$password = "";
+$dbuser = "root";
+$dbpassword = "";
 
 try {
 
     $pdo = new PDO(
         "mysql:host=$host;dbname=$dbname;charset=utf8mb4",
-        $username,
-        $password
+        $dbuser,
+        $dbpassword
     );
 
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
