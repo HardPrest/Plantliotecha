@@ -4,6 +4,6 @@ class HomeController
 {
     public function index()
     {
-        include "../app/Views/dashboard/index.php";
+        include "../app/Views/dashboard/dashboard.php";
     }
 }

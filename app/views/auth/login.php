@@ -1,6 +1,21 @@
+<?php if (!empty($error)): ?>
+
+<div class="alert danger">
+    <?= htmlspecialchars($error) ?>
+</div>
+
+<?php endif; ?>
+
+
 <?php
 $title = "Login | Plantliotecha";
 ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    <link rel="stylesheet" href="assets/css/app.css">
 
 <section class="login-page">
 
@@ -32,7 +47,7 @@ $title = "Login | Plantliotecha";
 
         <?php endif; ?>
 
-        <form action="/Plantliotecha/public/login" method="POST">
+        <form action="" method="POST">
 
             <div class="form-group">
 
@@ -110,7 +125,7 @@ $title = "Login | Plantliotecha";
 
             Don't have an account?
 
-            <a href="/Plantliotecha/public/register">
+            <a href="/Plantliotecha/public/register.php">
 
                 Create One
 
@@ -121,3 +136,5 @@ $title = "Login | Plantliotecha";
     </div>
 
 </section>
+
+</html>

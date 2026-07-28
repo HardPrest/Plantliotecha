@@ -8,17 +8,17 @@
 
     <title>Plantliotecha</title>
 
-    <link rel="stylesheet" href="/Plantliotecha/public/assets/css/app.css">
+    <link rel="stylesheet" href="public/assets/css/app.css">
 
 </head>
 
 <body>
 
-<?php include "../app/Views/partials/sidebar.php"; ?>
+<?php include "../app/views/partials/sidebar.php"; ?>
 
 <div class="main">
 
-    <?php include "../app/Views/partials/topbar.php"; ?>
+    <?php include "../app/views/partials/topbar.php"; ?>
 
     <main class="content">
 

@@ -1,27 +1,25 @@
-<div class="sidebar">
+<div class="wrapper">
 
-    <div class="logo">
+    <aside class="sidebar">
 
-        🌿 Plantliotecha
+        <h2>🌿 Plantliotecha</h2>
 
-    </div>
+        <nav>
 
-    <nav>
+            <a href="dashboard.php">🏠 Dashboard</a>
 
-        <a href="#">🏠 Dashboard</a>
+            <a href="plants.php">🌿 My Plants</a>
 
-        <a href="#">🪴 My Plants</a>
+            <a href="#">Calendar</a>
 
-        <a href="#">📅 Calendar</a>
+            <a href="#">Friends</a>
 
-        <a href="#">👥 Friends</a>
+            <a href="#">Community</a>
 
-        <a href="#">🌎 Community</a>
+            <a href="#">Badges</a>
 
-        <a href="#">🏆 Badges</a>
+            <a href="logout.php">Logout</a>
 
-        <a href="#">⚙ Settings</a>
+        </nav>
 
-    </nav>
-
-</div>
+    </aside>
