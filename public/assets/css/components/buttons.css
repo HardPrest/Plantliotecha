@@ -1,0 +1,27 @@
+.button{
+
+    background:#57F287;
+
+    color:#111;
+
+    font-weight:700;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:14px 24px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.button:hover{
+
+    transform:translateY(-2px);
+
+    filter:brightness(110%);
+
+}
