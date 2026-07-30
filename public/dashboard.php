@@ -41,10 +41,10 @@ $greetingName = $displayName !== "" ? $displayName : $username;
         <p style="color:var(--muted);max-width:560px">Your personal plant library is ready whenever you are.</p>
         <p><a class="button" href="add-plant.php">Add a plant</a> <a class="button secondary" href="plants.php">View collection</a></p>
         <section class="plant-grid">
-            <article class="card">
+            <a href="plants.php"><article class="card">
                 <h2><?= $plantCount ?></h2>
                 <p><?= $plantCount === 1 ? "plant in your collection" : "plants in your collection" ?></p>
-            </article>
+            </article></a>
             <article class="card">
                 <h2>Keep growing</h2>
                 <p>Add each plant's home, care details, and notes so everything stays in one calm place.</p>
